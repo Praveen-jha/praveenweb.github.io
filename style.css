@@ -1,0 +1,255 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* image and logo */
+#logo {
+  padding: 0px 4px;
+  margin: 0px 7px;
+  height: 60px;
+}
+#navbar img {
+  margin-top: 2px 3px;
+  padding: 0px 4px;
+  height: 60px;
+}
+/* navigation bar css */
+
+/* #navbar {
+    display: flex;
+    position: relative;
+    align-items: center;
+  } */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+#navbar ul {
+  display: flex;
+}
+#navigation li {
+  list-style: none;
+  justify-content: center;
+}
+#navigation li a {
+  padding: 3px 15px;
+  margin: 4px 9px;
+  text-decoration: none;
+  color: white;
+  border-radius: 15px;
+  font-size: 1.3rem;
+}
+#navigation li a:hover {
+  color: black;
+  background-color: white;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.btn {
+  position: absolute;
+  right: 11px;
+  /* border: 2px solid red; */
+}
+.btn input {
+  /* border: 2px solid red; */
+  padding: 5px 2px;
+  margin: 3px 5px;
+  border-radius: 20px;
+  width: 120px;
+  font-size: 17px;
+}
+.btn input:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+
+.marquee1 {
+  font-size: 2rem;
+  /* font-weight: bold; */
+  font-family: "Anton", sans-serif;
+  color: red;
+}
+#home-page::before {
+  content: "";
+  background: url("pic/bg1.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+#home-page {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 100px;
+  height: 427px;
+  justify-content: center;
+  align-items: center;
+}
+.text1 {
+  padding: 8px 9px;
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+/* .reg-btn{
+width: 100px;
+} */
+.reg-btn input {
+  width: 186px;
+  padding: 6px 7px;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 23px;
+}
+.reg-btn input:hover {
+  color: white;
+  background-color: grey;
+}
+.reg-btn input:active {
+  /* color: white; */
+  background-color: aqua;
+}
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url("pic/contact.jpg") no-repeat center center/cover;
+  margin-top: 20px;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Ubuntu", sans-serif;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+.h-primary {
+  font-size: 2.8rem;
+  padding: 12px;
+  align-items: center;
+
+  font-family: "Bree Serif", serif;
+}
+.center {
+  text-align: center;
+  margin: 25px;
+  margin-top: 40px;
+}
+.table-info th,
+.table-info td {
+  margin: 4px 5px;
+  padding: 5px 5px;
+  width: 175px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+#table {
+  /* margin: 5px 5px; */
+  /* margin-left: 30px; */
+  margin-top: 154px;
+}
+.table-info {
+  /* margin-top: 221px; */
+  /* margin: auto; */
+  /* align:center; */
+  margin: 5px auto;
+}
+h2 {
+  margin: 5px auto;
+  padding: 5px 5px;
+  width: fit-content;
+}
+#table::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 62%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url("pic/1.jpg") no-repeat center center/cover;
+  margin-top: 41px;
+}
+#cources {
+  margin-top: 34px;
+}
+
+/* courses */
+#services {
+  display: flex;
+  margin: 8px;
+}
+#services .box {
+  /* border: 2px solid brown; */
+  border: 2px solid brown;
+  padding: 5px 5px;
+  margin: 4px 5px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+#services .box img {
+  height: 180px;
+  display: block;
+
+  margin: 2px auto;
+  object-fit: cover;
+}
+#services .box p {
+  font-family: "Ubuntu", sans-serif;
+}
+.img img {
+  width: 400px;
+  margin: 10px 10px;
+  /* padding: 5px 4px; */
+  border: 4px dotted red;
+  border-radius: 30px;
+}
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#gallery::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 157%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url("pic/download.jpg") no-repeat center center/cover;
+  /* margin-top: 20px; */
+}
