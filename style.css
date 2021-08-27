@@ -3,8 +3,12 @@
   margin: 0;
   padding: 0;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
+}
+header {
+  position: sticky;
+  top: 0;
 }
 /* image and logo */
 #logo {
@@ -27,8 +31,6 @@ html{
 #navbar {
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
 }
 #navbar ul {
   display: flex;
@@ -61,6 +63,8 @@ html{
 .btn {
   position: absolute;
   right: 11px;
+  background: none;
+  color: white;
   /* border: 2px solid red; */
 }
 .btn input {
