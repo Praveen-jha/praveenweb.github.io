@@ -114,11 +114,15 @@ header {
 width: 100px;
 } */
 .reg-btn input {
-  width: 186px;
-  padding: 6px 7px;
-  font-size: 2rem;
+  width: 179px;
+  padding: 7px 15px;
+  font-size: 1.5rem;
   cursor: pointer;
-  border-radius: 23px;
+  border-radius: 16px;
+
+  background: none;
+  color: white;
+  border: 2px solid white;
 }
 .reg-btn input:hover {
   color: white;
